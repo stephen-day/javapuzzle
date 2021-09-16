@@ -88,12 +88,12 @@ public class Leet002RemoveNthNodeFromListEnd
         for (;;) {
             node = node.next;
             if (node == null) {
-                if (nthPrevNode == head && gap < n) {
+                if (nthPrevNode == head && gap < n)
                     return nthPrevNode.next;
-                }
 
                 if (nthPrevNode.next != null)
                     nthPrevNode.next = nthPrevNode.next.next;
+
                 return head;
             }
 
